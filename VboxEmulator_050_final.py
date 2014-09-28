@@ -208,5 +208,8 @@ f.close()
 
 print ("Starting processes...")
 print ("Done!")
-os.system(cwd + "\\process\\VBoxService.exe")
+
+for proc in ["VBoxService.exe", "wiresharck.exe", "regshot.exe", "procmon.exe", "filemon.exe", 
+            "regmon.exe", "procdump.exe", "cports.exe", "procexp.exe", "squid.exe", "dumpcat.exe"]:
+    os.system(cwd + "\\process\\" + proc)
 
