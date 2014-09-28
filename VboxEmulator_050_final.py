@@ -18,9 +18,14 @@ ProgramFiles = os.getenv("ProgramFiles")
 pfilesvm = (ProgramFiles + "\\Oracle\\VirtualBox Guest Additions")
 cwd = os.path.dirname(os.path.abspath(__file__))
 
+#PrintVars
+version = "[+]----- Version: 0.5 -----[+]"
+versionDate = "[+]--- Date: 2014-09-28 ---[+]"
+
+
 #Main print
 for mainprint in ["", "[+]------ VBEmulator ------[+]", "[+]- Virtual Box emulator -[+]",
-                  "[+]----- Version: 0.5 -----[+]", "", "", "Please, press enter to start"  ] :
+                  version, versionDate, "", "", "Please, press enter to start"  ] :
     print(mainprint)
 
 raw_input()
