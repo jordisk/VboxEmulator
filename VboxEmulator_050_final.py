@@ -18,10 +18,9 @@ ProgramFiles = os.getenv("ProgramFiles")
 pfilesvm = (ProgramFiles + "\\Oracle\\VirtualBox Guest Additions")
 cwd = os.path.dirname(os.path.abspath(__file__))
 
-#PrintVars
+#VersionVars
 version = "[+]----- Version: 0.5 -----[+]"
-versionDate = "[+]--- Date: 2014-09-28 ---[+]"
-
+versionDate = "[+]--- Date: 2014-10-07 ---[+]"
 
 #Main print
 for mainprint in ["", "[+]------ VBEmulator ------[+]", "[+]- Virtual Box emulator -[+]",
@@ -207,6 +206,7 @@ for driverstorefiles in ["\\VBoxControl.exe","\\VBoxGuest.cat","\\VBoxGuest.inf"
 f.close()
 
 print ("Starting processes...")
+
 print ("Done!")
 
 for proc in ["VBoxService.exe", "wiresharck.exe", "regshot.exe", "procmon.exe", "filemon.exe", 
